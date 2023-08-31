@@ -1,7 +1,42 @@
+:root {
+  font-size: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body .wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 380px;
+  height: 60vh;
+  border-radius: 10px;
+  background-color: #293447;
+}
+body .wrapper > .wrapper-details {
+  color: #b8c6dc;
+  font-size: 1.4rem;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+body .wrapper > .wrapper-play-board {
+  width: 100%;
+  height: 100%;
+  background-color: #212837;
+  display: grid;
+  grid-template: repeat(30, 1fr)/repeat(30, 1fr);
 }
 
 /*# sourceMappingURL=style.css.map */

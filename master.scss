@@ -1,2 +1,52 @@
-@import 'global';
+// root sizes
+:root{font-size: 10px;}
 
+// repetitious code
+*{
+	margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+//colors
+$bg : #293447;
+$detailsText : #b8c6dc;
+$playBoard : #212837;
+
+// styles
+body{
+  // margin: 100px auto;
+  //for center board game but i center with min-height and flex
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 380px;
+    height: 60vh;
+    border-radius: 10px;
+    background-color: $bg;
+
+    >.wrapper-details{
+      color: $detailsText;
+      font-size: 1.4rem;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    >.wrapper-play-board{
+      width: 100%;
+      height: 100%;
+      background-color: $playBoard;
+      // for move snake on play board
+      display: grid;
+      grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    }
+  }
+}
