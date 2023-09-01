@@ -62,9 +62,10 @@ body{
       >.play-board-snake{
         background-image: $imageSnake;
         // background-size: 100% 100%;
-        background-size: 200% 200%;
-        background-position: center;
-        border: 1px solid red;
+        // background-size: 200% 200%;
+        // background-position: center;
+        // border: 1px solid red;
+        background-color: $snakeBody;
       }
     }
   }

@@ -44,9 +44,7 @@ body .wrapper > .wrapper-play-board > .play-board-food {
 }
 body .wrapper > .wrapper-play-board > .play-board-snake {
   background-image: url("../images/snake-head.png");
-  background-size: 200% 200%;
-  background-position: center;
-  border: 1px solid red;
+  background-color: #649C49;
 }
 
 /*# sourceMappingURL=style.css.map */
