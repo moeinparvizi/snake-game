@@ -49,6 +49,13 @@ const initGame = () => {
   // create food in playboard
   let htmlMarkup = `<div class="play-board-food" style="grid-area: ${foodY} / ${foodX}"></div>`
 
+  //eat foot
+  if (snakeX == foodX && snakeY == foodY) {
+
+    // change food position after eat an apple
+    randomFood()
+  }
+
   // update location of snake
   snakeY += velocityY
   snakeX += velocityX
@@ -59,8 +66,11 @@ const initGame = () => {
   // inner all Element in playboard
   playboard.innerHTML = htmlMarkup
 }
+
+// start with calling functions
 randomFood()
-initGame()
+// loop movement with setInterval
+setInterval(initGame, 125)
 
 // click to start
 document.addEventListener('keydown', changeDirection)
