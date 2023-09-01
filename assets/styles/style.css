@@ -19,8 +19,8 @@ body .wrapper {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 380px;
-  height: 60vh;
+  width: 480px;
+  height: 80vh;
   border-radius: 10px;
   background-color: #eee;
 }
@@ -41,6 +41,12 @@ body .wrapper > .wrapper-play-board {
 body .wrapper > .wrapper-play-board > .play-board-food {
   background-image: url("../images/snake-food.png");
   background-size: 100% 100%;
+}
+body .wrapper > .wrapper-play-board > .play-board-snake {
+  background-image: url("../images/snake-head.png");
+  background-size: 200% 200%;
+  background-position: center;
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */

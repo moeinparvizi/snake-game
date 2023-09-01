@@ -1,11 +1,11 @@
 // DOM 
 const playboard = document.querySelector('.wrapper-play-board')
 
-// snke food (apple) location
-// let foodX = 13
-// let foodY = 10
+// variables
+let foodY = 0, foodX = 0
+let snakeY = 5, snakeX = 5
 
-// create random snake food
+// create random position snake food (apple)
 const randomFood = () => {
   // create random 1 to 30
   foodX = Math.random() * 30
@@ -19,7 +19,8 @@ const randomFood = () => {
 const initGame = () => {
   randomFood()
   // create food in playboard
-  let foodMarkup = `<div class="play-board-food" style="grid-area: ${foodY} / ${foodX}"></div>`
-  playboard.innerHTML = foodMarkup
+  let htmlMarkup = `<div class="play-board-food" style="grid-area: ${foodY} / ${foodX}"></div>`
+  htmlMarkup += `<div class="play-board-snake" style="grid-area: ${snakeY} / ${snakeX}"></div>`
+  playboard.innerHTML = htmlMarkup
 }
 initGame()
