@@ -22,7 +22,7 @@ body .wrapper {
   width: 380px;
   height: 60vh;
   border-radius: 10px;
-  background-color: #293447;
+  background-color: #fff;
 }
 body .wrapper > .wrapper-details {
   color: #b8c6dc;
