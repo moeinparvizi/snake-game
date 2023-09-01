@@ -22,10 +22,10 @@ body .wrapper {
   width: 380px;
   height: 60vh;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #eee;
 }
 body .wrapper > .wrapper-details {
-  color: #b8c6dc;
+  color: #848484;
   font-size: 1.4rem;
   padding: 20px;
   display: flex;
@@ -37,6 +37,10 @@ body .wrapper > .wrapper-play-board {
   background-color: #212837;
   display: grid;
   grid-template: repeat(30, 1fr)/repeat(30, 1fr);
+}
+body .wrapper > .wrapper-play-board > .play-board-food {
+  background-image: url("../images/snake-food.png");
+  background-size: 100% 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

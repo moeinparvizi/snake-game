@@ -11,10 +11,10 @@
 
 //colors
 // $bg : #293447;
-$bg : #fff;
-$detailsText : #b8c6dc;
-// $playBoard : #2d2;
+$bg : #eee;
+$detailsText : #848484;
 $playBoard : #212837;
+$food : #ff003d;
 
 // styles
 body{
@@ -49,6 +49,12 @@ body{
       // for move snake on play board
       display: grid;
       grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+      >.play-board-food{
+        // background-color: $food;
+        // border-radius: 50%;
+        background-image: url('../images/snake-food.png');
+        background-size: 100% 100%;
+      }
     }
   }
 }
