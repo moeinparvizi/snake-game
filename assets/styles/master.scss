@@ -16,6 +16,7 @@ $detailsText : #848484;
 $playBoard : #212837;
 $food : #ff003d;
 $snakeBody : #649C49;
+$black : #000;
 // variable
 $imageFood : url('../images/snake-food.png');
 $imageSnake: url('../images/snake-head.png');
@@ -28,6 +29,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-color: $black;
 
   .wrapper {
     display: flex;
