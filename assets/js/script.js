@@ -69,6 +69,7 @@ const initGame = () => {
     snakeBody.push([foodX, foodY])
     // console.log(snakeBody)
 
+    // increase score
     score++
     scoreElement.innerText = `Score : ${score}`
   }
