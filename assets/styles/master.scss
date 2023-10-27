@@ -1,28 +1,30 @@
 // root sizes
-:root{font-size: 10px;}
+:root {
+  font-size: 10px;
+}
 
 // repetitious code
-*{
-	margin: 0;
+* {
+  margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 //colors
 // $bg : #293447;
-$bg : #eee;
-$detailsText : #848484;
-$playBoard : #212837;
-$food : #ff003d;
-$snakeBody : #649C49;
-$black : #000;
+$bg: #eee;
+$detailsText: #848484;
+$playBoard: rgba(56, 113, 113, 0.5);
+$food: #ff003d;
+$snakeBody: #649c49;
+$black: #000;
 // variable
-$imageFood : url('../images/snake-food.png');
-$imageSnake: url('../images/snake-head.png');
+$imageFood: url("../images/snake-food.png");
+$imageSnake: url("../images/snake-head.png");
 
 // styles
-body{
+body {
   // margin: 100px auto;
   //for center board game but i center with min-height and flex
   display: flex;
@@ -36,38 +38,81 @@ body{
     flex-direction: column;
     overflow: hidden;
     width: 480px;
-    height: 80vh;
+    height: 60vh;
     border-radius: 10px;
     background-color: $bg;
 
-    >.wrapper-details{
-      color: $detailsText;
+    > .wrapper-details {
+      color: $bg;
       font-size: 1.4rem;
       padding: 20px;
       display: flex;
       justify-content: space-between;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      > .wrapper-details-score {
+        padding-right: 10px;
+      }
     }
 
-    >.wrapper-play-board{
+    > .wrapper-play-board {
       width: 100%;
       height: 100%;
       background-color: $playBoard;
       // for move snake on play board
       display: grid;
       grid-template: repeat(30, 1fr) / repeat(30, 1fr);
-      >.play-board-food{
+      > .play-board-food {
         // background-color: $food;
         // border-radius: 50%;
         background-image: $imageFood;
         background-size: 100% 100%;
       }
-      >.play-board-snake{
+      > .play-board-snake {
         background-image: $imageSnake;
         // background-size: 100% 100%;
         // background-size: 200% 200%;
         // background-position: center;
         // border: 1px solid red;
         background-color: $snakeBody;
+      }
+    }
+
+    > .wrapper-controls {
+      border: 1px solid red;
+      width: 300px;
+      height: 200px;
+      font-size: 50px;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $bg;
+      > .bi-arrow-left {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0;
+      }
+      > .bi-arrow-up {
+        position: absolute;
+        transform: translateX(-50%);
+        top: 0;
+        left: 50%;
+      }
+      > .bi-arrow-right {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 0;
+      }
+      > .bi-arrow-down {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 60%;
+        left: 50%;
       }
     }
   }
