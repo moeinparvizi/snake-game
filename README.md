@@ -69,6 +69,7 @@ moein parvizi
 ## About The Project
 
 ![Screenshot from 2023-10-27 14-36-22](https://github.com/moeinparvizi/snake-game/assets/38692466/7deeb52c-d4bc-4a0a-86c0-2664dbcb4acc)
+![Screenshot from 2023-10-27 14-42-20](https://github.com/moeinparvizi/snake-game/assets/38692466/6144f99d-e057-4793-aa78-82a31038d6c6)
 
 
 Hints :
