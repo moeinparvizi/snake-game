@@ -33,10 +33,25 @@ const randomFood = () => {
 };
 
 // handle if user game over
-const handleGameOver = () => {
-  clearInterval(setIntervalId);
-  alert("game over");
-  location.reload();
+const handleGameOver = async () => {
+  await clearInterval(setIntervalId);
+  await Swal.fire({
+    title: "your lose",
+    background: "transparent",
+    icon: "warning",
+    confirmButtonText: "try again",
+    timer: "10000",
+    backdrop: "rgba(0,0,0,.7)",
+    color: "#eee",
+    showClass: {
+      popup: "animate__animated animate__fadeInDown",
+    },
+    hideClass: {
+      popup: "animate__animated animate__fadeOutUp",
+    },
+    timerProgressBar: true,
+  });
+  await location.reload();
 };
 
 // change direction of snake
