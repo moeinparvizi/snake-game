@@ -15,7 +15,7 @@
 // $bg : #293447;
 $bg: #eee;
 $detailsText: #848484;
-$playBoard: rgba(56, 113, 113, 0.5);
+$playBoard: rgba(0, 13, 113, 0.5);
 $food: #ff003d;
 $snakeBody: #649c49;
 $black: #000;
@@ -77,19 +77,23 @@ body {
         // background-position: center;
         // border: 1px solid red;
         background-color: $snakeBody;
+        border-radius: 20%;
       }
     }
 
     > .wrapper-controls {
-      border: 1px solid red;
+      display: none;
       width: 300px;
       height: 200px;
-      font-size: 50px;
+      font-size: 40px;
       position: absolute;
       top: 80%;
       left: 50%;
       transform: translateX(-50%);
       color: $bg;
+      @media only screen and (max-width: 800px) {
+        display: flex;
+      }
       > .bi-arrow-left {
         position: absolute;
         transform: translateY(-50%);

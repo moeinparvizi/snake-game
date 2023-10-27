@@ -2,6 +2,7 @@
 const playboard = document.querySelector(".wrapper-play-board");
 const scoreElement = document.querySelector(".wrapper-details-score");
 const highScoreElement = document.querySelector(".wrapper-details-high-score");
+const controls = document.querySelectorAll(".wrapper-controls>i");
 
 // variables
 let gameOver = false;
@@ -59,6 +60,15 @@ const changeDirection = (e) => {
 
   // initGame()
 };
+
+controls.forEach((val) => {
+  // on each key click to passing key dataset value
+  val.addEventListener("click", () =>
+    changeDirection({
+      key: val.dataset.key,
+    }),
+  );
+});
 
 // main function
 const initGame = () => {
