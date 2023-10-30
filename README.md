@@ -144,9 +144,9 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] high score
-- [ ] customize notification
-- [ ] mobile experience
+- [x] high score
+- [x] customize notification
+- [x] mobile experience
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
