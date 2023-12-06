@@ -15,7 +15,7 @@
 // $bg : #293447;
 $bg: #eee;
 $detailsText: #848484;
-$playBoard: rgba(0, 13, 113, 0.5);
+$playBoard: rgba(0, 0, 0, 0.5);
 $food: #ff003d;
 $snakeBody: #649c49;
 $black: #000;
@@ -60,7 +60,9 @@ body {
     > .wrapper-play-board {
       width: 100%;
       height: 100%;
-      background-color: $playBoard;
+      background-color: rgb(0, 0, 0);
+      // box-shadow: 0 10px 10px 20px white;
+      border: 1px solid white;
       // for move snake on play board
       display: grid;
       grid-template: repeat(30, 1fr) / repeat(30, 1fr);
